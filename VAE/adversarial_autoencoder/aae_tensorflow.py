@@ -6,10 +6,11 @@ import os
 from tensorflow.examples.tutorials.mnist import input_data
 
 
-mnist = input_data.read_data_sets('../../MNIST_data', one_hot=True)
+mnist = input_data.read_data_sets('/home/sunpq/datasets/MNIST_data/mnist', one_hot=True)
 mb_size = 32
 z_dim = 10
 X_dim = mnist.train.images.shape[1]
+print(X_dim)
 y_dim = mnist.train.labels.shape[1]
 h_dim = 128
 c = 0
